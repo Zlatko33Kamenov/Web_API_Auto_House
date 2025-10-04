@@ -4,9 +4,9 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
+<h1>Create Car</h1>
 
-<h4>Car</h4>
+<!-- Your comment goes here <h4>Car</h4>-->
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -37,16 +37,17 @@
                 <input asp-for="Color" class="form-control" />
                 <span asp-validation-for="Color" class="text-danger"></span>
             </div>
+            <br />
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Create" class="btn btn-primary" /> <a asp-action="Index" class="btn btn-danger">Back to List</a>
             </div>
         </form>
     </div>
 </div>
 
-
+<br />
 <div>
-    <p class="btn btn-secondary"><a asp-action="Index">Back to List</a></p>
+    
 </div>
 
 @section Scripts {
